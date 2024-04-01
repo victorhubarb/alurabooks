@@ -12,23 +12,22 @@
 * [Project Developers](#project-developers)
 
 ## Project Description
-
+Website for selling technology-focused books specifically with some menu options and also in the body of the page such as 'bestsellers'. Additionally, the second page developed, is redirected when clicking on 'my shelf' or on the shopping bag icon in the top right. This page contains the books for sale on the website, and can be filtered by the options of the tabs.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features and Application Demonstration
-- `Feature 1`: 
-- `Feature 2`: 
-- `Feature 3`: 
-- `Feature 4`: Responsive website, designed for various screen sizes.
+- `Feature 1`: On the 'minha estante' page, the sorting method was applied in the 'ordenar por preço' tab and also 'livros disponiveis' where, in addition to organizing by price, only books available for purchase are filtered, not those that are sold out. Additionally, filters were created for organization by book subjects, such as front-end books, back-end books, and others. Applying the forEach, map, and reduce methods.
+- `Feature 2`: Navigation links between pages, clicking on 'my shelf' or the shopping bag icon will redirect you to the shelf page, and on the 'my shelf' page, clicking on the logo image will redirect you back to the main page.
+- `Feature 3`: Responsive website, designed for various screen sizes.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
 Project requirements:
  - Have your preferred IDE installed on your computer.
 
-Access the project hosted [here](https://monibank-theta-ten.vercel.app) and have fun:
+Access the project hosted [here](https://alurabooks-rose-zeta.vercel.app/index.html) and have fun:
  - Project hosted on Vercel.
- - Easy implementation, [click](https://monibank-theta-ten.vercel.app) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
+ - Easy implementation, [click](https://alurabooks-rose-zeta.vercel.app/index.html) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
 
 Have the code on your computer:
  - Access the project source code [here](https://github.com/victorhubarb/alurabooks) or download the project [here](https://github.com/victorhubarb/alurabooks/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
