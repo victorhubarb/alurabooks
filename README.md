@@ -12,13 +12,13 @@
 * [Project Developers](#project-developers)
 
 ## Project Description
-AluraBooks is an interactive digital library platform designed to cater to avid readers and book enthusiasts. Developed using HTML, CSS, and JavaScript, this website allows users to browse, purchase, and manage a personal collection of books across various categories. With its user-friendly interface and intuitive navigation, AluraBooks offers a seamless online book-shopping experience, where users can also mark books as favorites and manage their bookshelves.
+AluraBooks is an interactive digital library platform designed to cater to avid readers and book enthusiasts. Developed using HTML, CSS, and JavaScript, this website allows users to browse, purchase, and manage a personal collection of books across various categories. With its user-friendly interface and intuitive navigation, AluraBooks offers a seamless online book-shopping experience, where users can also mark books as favorites and manage their bookshelves. Books and filtering methods on the "My Shelf" page are dynamically loaded and managed through JavaScript, using data retrieved from an external API.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features and Application Demonstration
 - **Dynamic Navigation**: Includes a top navigation bar with a clickable logo redirecting to the home page, dropdown menus for book categories, and direct links to the user's bookshelf and shopping cart.
 - **Book Categories Dropdown**: A clickable dropdown menu under 'Categories' in the main navigation, offering subcategories like Front-End, Back-End, and more, enhancing the book search experience.
-- **Filtering Options**: Users can filter books by clicking on 'Minha estante' by specific categories (e.g., Front-End, Back-End), availability, and price. Unavailable books are shown with increased opacity to distinguish them easily from available ones.
+- **Filtering Options on My Shelf**: On the "Minha estante" page, users can filter books by specific categories (e.g., Front-End, Back-End), availability, and price. These filtering options are implemented through JavaScript and are powered by data from an external API. Unavailable books are shown with increased opacity to distinguish them easily from available ones.
 - **Search Functionality**: A search bar is included for users to search for books by keywords. Note: This feature is visual-only in the current version.
 - **Latest Releases Carousel**: Displays newly released books in a carousel that users can navigate by clicking and dragging.
 - **Bestsellers Carousel**: Showcases best-selling books in a similar interactive carousel format.
@@ -28,20 +28,26 @@ AluraBooks is an interactive digital library platform designed to cater to avid 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
-Project requirements:
- - Have your preferred IDE installed on your computer.
 
-Access the project hosted [here](https://alurabooks-rose-zeta.vercel.app/index.html) and have fun:
- - Project hosted on Vercel.
- - Easy implementation, [click](https://alurabooks-rose-zeta.vercel.app/index.html) and enter the project, try it out easily and quickly without needing to download the files to your own computer.
+### Prerequisites
+- **Integrated Development Environment (IDE)**: Ensure you have your preferred IDE installed, such as Visual Studio Code, to manage and edit the project files.
 
-Have the code on your computer:
- - Access the project source code [here](https://github.com/victorhubarb/alurabooks) or download the project [here](https://github.com/victorhubarb/alurabooks/archive/refs/heads/main.zip). After one of these steps, and also unzip it on your computer in case of download, open the project in your preferred IDE.
+### Online Access
+- **Live Demo**: Experience AluraBooks directly through its hosted version on Vercel without any setup required:
+  - [Visit AluraBooks](https://alurabooks-rose-zeta.vercel.app/index.html) to explore the platform's features and interface.
 
-Clone repository with the following steps:
- 1. Open the terminal
- 2. git clone https://github.com/victorhubarb/alurabooks.git
- 3. Press ENTER to create your clone
+### Local Setup
+- **Access and Download the Source Code**:
+  - Navigate to the [AluraBooks GitHub repository](https://github.com/victorhubarb/alurabooks) to view the source code.
+  - To download the project, [click here](https://github.com/victorhubarb/alurabooks/archive/refs/heads/main.zip), unzip the file after download, and open it in your IDE.
+
+- **Clone the Repository**:
+  ```bash
+  # Open your terminal
+  git clone https://github.com/victorhubarb/alurabooks.git
+  cd alurabooks
+  
+  # Now you are ready to work on the project locally.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Technologies Used
