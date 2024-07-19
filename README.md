@@ -12,13 +12,19 @@
 * [Project Developers](#project-developers)
 
 ## Project Description
-Website for selling technology-focused books specifically with some menu options and also in the body of the page such as 'bestsellers'. Additionally, the second page developed, is redirected when clicking on 'my shelf' or on the shopping bag icon in the top right. This page contains the books for sale on the website, and can be filtered by the options of the tabs.
+AluraBooks is an interactive digital library platform designed to cater to avid readers and book enthusiasts. Developed using HTML, CSS, and JavaScript, this website allows users to browse, purchase, and manage a personal collection of books across various categories. With its user-friendly interface and intuitive navigation, AluraBooks offers a seamless online book-shopping experience, where users can also mark books as favorites and manage their bookshelves.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
 ## Features and Application Demonstration
-- `Feature 1`: On the 'minha estante' page, the sorting method was applied in the 'ordenar por preço' tab and also 'livros disponiveis' where, in addition to organizing by price, only books available for purchase are filtered, not those that are sold out. Additionally, filters were created for organization by book subjects, such as front-end books, back-end books, and others. Applying the forEach, map, and reduce methods.
-- `Feature 2`: Navigation links between pages, clicking on 'my shelf' or the shopping bag icon will redirect you to the shelf page, and on the 'my shelf' page, clicking on the logo image will redirect you back to the main page.
-- `Feature 3`: Responsive website, designed for various screen sizes.
+- **Dynamic Navigation**: Includes a top navigation bar with a clickable logo redirecting to the home page, dropdown menus for book categories, and direct links to the user's bookshelf and shopping cart.
+- **Book Categories Dropdown**: A clickable dropdown menu under 'Categories' in the main navigation, offering subcategories like Front-End, Back-End, and more, enhancing the book search experience.
+- **Filtering Options**: Users can filter books by clicking on 'Minha estante' by specific categories (e.g., Front-End, Back-End), availability, and price. Unavailable books are shown with increased opacity to distinguish them easily from available ones.
+- **Search Functionality**: A search bar is included for users to search for books by keywords. Note: This feature is visual-only in the current version.
+- **Latest Releases Carousel**: Displays newly released books in a carousel that users can navigate by clicking and dragging.
+- **Bestsellers Carousel**: Showcases best-selling books in a similar interactive carousel format.
+- **Recently Visited Topics**: Quick access buttons for recently visited topics like Android, Agile, HTML, and CSS, enhancing user interaction and accessibility.
+- **Responsive Design**: Ensures the platform is fully responsive and accessible on various devices, from desktops to smartphones.
+- **Footer Links**: Includes useful links to other websites in the Alura group and community channels, enriching the user's experience and providing additional resources.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Project Access
