@@ -1,48 +1,54 @@
-# AluraBooks <a name="readme-top"></a>
-![Static Badge](https://img.shields.io/badge/status-completed-green?style=for-the-badge)
+# AluraBooks
 
-## Introduction
-**AluraBooks** is a technology-driven, interactive digital bookselling platform. The site was developed using HTML, CSS, and JavaScript, offering an intuitive interface that allows users to browse, purchase, and manage their book collection. The site includes features such as search, categories, featured carousels, and personalized bookshelves.
+A bookstore front-end in plain HTML, CSS and JavaScript: a landing page with carousels of releases and best sellers, plus a "Minha estante" page that loads a book catalog from an API and lets you filter, sort and total it.
 
-## Live Application
-[AluraBooks Demonstration](https://alurabooks-rose-zeta.vercel.app/#)
+**Live demo:** [alurabooks-rose-zeta.vercel.app](https://alurabooks-rose-zeta.vercel.app)
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Contributors](#contributors)
+## What's inside
 
-## Installation
+The shelf page (`pages/minha-estante.html`) is where the JavaScript is. Each file in `app/` covers one array method:
 
-### Prerequisites
-- Code editor (recommended: VSCode)
-- Web browser
+| File | What it does |
+|---|---|
+| `main.js` | Fetches the book list from a public JSON endpoint with `fetch` and `async/await` |
+| `metodoMap.js` | `map` applies a 30% discount to every price |
+| `metodoForEach.js` | `forEach` renders each book as a card, and greys out the ones with no stock |
+| `metodoFilter.js` | `filter` powers the category buttons (front-end, back-end, data) and the "available" button |
+| `metodoReduce.js` | `reduce` adds up the price of the available books and shows the total |
+| `metodoSort.js` | `sort` orders the books by price |
 
-### Steps to run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/victorhubarb/alurabooks.git
-   cd alurabooks
-   ```
-2. Open the `index.html` file in your browser to view the page.
+The landing page uses the Swiper library for its carousels. The CSS is split into one file per section (header, banner, carousel, topics, contact, footer, shelf), with media queries for smaller screens.
 
-## Usage
-The platform allows users to browse different book categories, view new releases and bestsellers in interactive carousels, and manage their bookshelves and favorites. Keyword searches and category filters make browsing easier.
+The interface is in Portuguese.
 
-## Features
-- **Featured Carousel**: Shows best-selling books and latest releases.
-- **Category Filtering**: Allows users to filter books by specific categories, such as Front-End and Back-End.
-- **Search**: Search bar to find books quickly.
-- **Shelf Management**: Organize books on personalized shelves.
-- **Responsive Design**: The site adapts to different devices and screen sizes.
+## Run it
 
-## Technologies
-- **HTML5**
-- **CSS3**
-- **JavaScript**
+No build step and no dependencies to install. The shelf page fetches data over the network, so run it from a local server and not from a `file://` address:
 
-## Contributors
-- [Victor Barbosa](https://github.com/victorhubarb)
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+git clone https://github.com/victorhubarb/alurabooks.git
+cd alurabooks
+python3 -m http.server 8000     # then open http://localhost:8000
+```
+
+## Project structure
+
+```
+index.html            Landing page
+pages/                minha-estante.html
+app/                  JavaScript, one file per array method
+styles/ + styles.css  CSS by section
+img/                  Covers, banners and icons
+```
+
+## Known gaps
+
+- After you click a filter button, prices show without the discount. The discounted list is not saved back into `livros`, and the filters read the original array.
+- "Ordenar por preço" sorts the original array in place and also clears any active filter.
+- Search, a shopping cart and checkout are not part of this project. It only covers browsing and filtering.
+- The catalog comes from a third-party endpoint, so the page depends on it staying online.
+- The shelf page has no loading or error state.
+
+---
+
+Victor Hugo Barbosa · [GitHub](https://github.com/victorhubarb) · [LinkedIn](https://www.linkedin.com/in/victorhbarbosa/)
